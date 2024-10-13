@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #f2f2f2;
+}
+
+.hero {
+	background: #000;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.text {
+	width: 100%;
+	color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 400px;
+	font-weight: bold;
+
+	background-image: url('../images/Creation_of_Adam.jpg');
+	background-size: cover;
+	background-position-y: 810px;
+	
+	background-clip: text;
+	-webkit-background-clip: text;
+
+	-webkit-text-fill-color: transparent;
+}

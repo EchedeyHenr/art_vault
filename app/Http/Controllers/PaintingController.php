@@ -30,7 +30,7 @@ class PaintingController extends Controller
             'size' => 'required|string|max:255',
             'museum' => 'required|string|max:255',
             'curiosity' => 'required|string',
-            'photo' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'  // Acepta solo imágenes
+            'photo' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'
         ]);
 
         $painting = new Painting;
@@ -44,8 +44,8 @@ class PaintingController extends Controller
         $painting->curiosity = $request->input('curiosity');
         if ($request->hasFile('photo')) {
             $file = $request->file('photo');
-            $path = $file->store('pieces_of_art_photos', 'public');  // Guarda en el directorio 'storage/app/public/flowers_photos'
-            $painting->photo = $path;  // Guarda la ruta en la base de datos
+            $path = $file->store('pieces_of_art_photos', 'public');
+            $painting->photo = $path;
         }
 
         $painting->save();
