@@ -21,6 +21,18 @@ class PaintingController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'piece_of_art' => 'required|string|max:255',
+            'painter' => 'required|string|max:255',
+            'creation_date' => 'required|string|max:255',
+            'art_movement' => 'required|string|max:255',
+            'artistic_technique' => 'required|string|max:255',
+            'size' => 'required|string|max:255',
+            'museum' => 'required|string|max:255',
+            'curiosity' => 'required|string',
+            'photo' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'  // Acepta solo imágenes
+        ]);
+
         $painting = new Painting;
         $painting->piece_of_art = $request->input('piece_of_art');
         $painting->painter = $request->input('painter');
@@ -30,6 +42,12 @@ class PaintingController extends Controller
         $painting->size = $request->input('size');
         $painting->museum = $request->input('museum');
         $painting->curiosity = $request->input('curiosity');
+        if ($request->hasFile('photo')) {
+            $file = $request->file('photo');
+            $path = $file->store('pieces_of_art_photos', 'public');  // Guarda en el directorio 'storage/app/public/flowers_photos'
+            $painting->photo = $path;  // Guarda la ruta en la base de datos
+        }
+
         $painting->save();
 
         return redirect()->route('paintings.index');

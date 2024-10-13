@@ -24,6 +24,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '77 cm x 53 cm',
                 'museum' => 'Museo del Louvre, París',
                 'curiosity' => 'La pintura fue robada en 1911 por un empleado del Louvre, Vincenzo Peruggia, y estuvo desaparecida durante dos años antes de ser recuperada.',
+                'photo' => 'paintings/Mona_Lisa.jpg',
             ],
             [
                 'piece_of_art' => 'La Última Cena',
@@ -34,6 +35,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '460 cm x 880 cm',
                 'museum' => 'Convento de Santa Maria delle Grazie, Milán',
                 'curiosity' => ' Da Vinci utilizó una técnica experimental en vez de fresco tradicional, lo que provocó que la pintura comenzara a deteriorarse rápidamente poco después de su finalización.',
+                'photo' => 'paintings/The_Last_Supper.jpg',
             ],
             [
                 'piece_of_art' => 'El Jardín de las Delicias',
@@ -44,6 +46,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '220 cm x 389 cm (tríptico abierto)',
                 'museum' => 'Museo del Prado, Madrid',
                 'curiosity' => 'Nadie sabe con certeza el significado exacto de la obra, y ha sido objeto de múltiples interpretaciones, desde alegorías del pecado hasta visiones fantásticas del mundo.',
+                'photo' => 'paintings/El_jardin_de_las_Delicias.jpg',
             ],
             [
                 'piece_of_art' => 'La Escuela de Atenas',
@@ -54,6 +57,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '500 cm x 770 cm',
                 'museum' => 'Museos Vaticanos, Ciudad del Vaticano',
                 'curiosity' => 'En esta obra, Rafael se autorretrata como uno de los filósofos (Euclides), y se cree que los rostros de Platón y Aristóteles están inspirados en Leonardo da Vinci y Michelangelo, respectivamente.',
+                'photo' => 'paintings/La_scuola_di_Atene.jpg',
             ],
             [
                 'piece_of_art' => 'Las Meninas',
@@ -64,6 +68,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '318 cm x 276 cm',
                 'museum' => 'Museo del Prado, Madrid',
                 'curiosity' => 'La complejidad de la obra reside en su juego de perspectivas. Velázquez incluyó su propio retrato pintando a la familia real, creando una sutil interacción entre realidad y representación.',
+                'photo' => 'paintings/Las_Meninas.jpg',
             ],
             [
                 'piece_of_art' => 'El rapto de Proserpina',
@@ -74,6 +79,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '200 cm x 175 cm',
                 'museum' => 'Kunsthistorisches Museum, Viena',
                 'curiosity' => 'Rubens era conocido por su dominio en pintar cuerpos humanos en movimiento, y en esta obra destacó particularmente la representación del dramatismo de la escena mitológica.',
+                'photo' => 'paintings/El_rapto_de_Proserpina.jpg',
             ],
             [
                 'piece_of_art' => 'La Noche Estrellada',
@@ -84,6 +90,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '73.7 cm x 92.1 cm',
                 'museum' => 'Museo de Arte Moderno (MoMA), Nueva York',
                 'curiosity' => 'Van Gogh pintó esta obra desde su habitación en un hospital psiquiátrico en Saint-Rémy-de-Provence, y no se sabe si el paisaje se basa completamente en la realidad o en sus visiones internas.',
+                'photo' => 'paintings/La_noche_estrellada.jpg',
             ],
             [
                 'piece_of_art' => 'Impresión, Sol Naciente',
@@ -94,6 +101,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '48 cm x 63 cm',
                 'museum' => 'Museo Marmottan Monet, París',
                 'curiosity' => 'Este cuadro dio nombre al movimiento impresionista, tras ser descrito con desprecio por un crítico como una "impresión" más que una pintura acabad',
+                'photo' => 'paintings/Impression,_Sunrise.jpg',
             ],
             [
                 'piece_of_art' => 'El Grito',
@@ -104,6 +112,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '91 cm x 73.5 cm',
                 'museum' => 'Galería Nacional de Noruega, Oslo',
                 'curiosity' => 'Hay varias versiones de "El Grito", y una de ellas fue robada en 2004 del Museo Munch de Oslo, pero fue recuperada dos años después.',
+                'photo' => 'paintings/The_Scream.png',
             ],
             [
                 'piece_of_art' => 'Guernica',
@@ -114,6 +123,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '349 cm x 776 cm',
                 'museum' => 'Museo Reina Sofía, Madrid',
                 'curiosity' => 'Picasso creó "Guernica" como respuesta al bombardeo nazi sobre la ciudad vasca de Guernica, y la obra se convirtió en un poderoso símbolo antibélico.',
+                'photo' => 'paintings/Guernica.jpg',
             ],
             [
                 'piece_of_art' => 'La Persistencia de la Memoria',
@@ -124,6 +134,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '24 cm x 33 cm',
                 'museum' => 'Museo de Arte Moderno (MoMA), Nueva York',
                 'curiosity' => 'Dalí se inspiró en los relojes blandos tras observar un trozo de queso Camembert derritiéndose al sol.',
+                'photo' => 'paintings/La_persistencia_de_la_memoria.jpg',
             ],
             [
                 'piece_of_art' => 'El Almuerzo de los Remeros',
@@ -134,6 +145,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '130 cm x 173 cm',
                 'museum' => 'Colección Phillips, Washington D.C.',
                 'curiosity' => 'Esta pintura es famosa por representar a los amigos de Renoir, incluidos otros artistas, escritores y la que sería su futura esposa, Aline Charigot.',
+                'photo' => 'paintings/Luncheon_of_the_Boating_Party.jpg',
             ],
             [
                 'piece_of_art' => 'El Beso',
@@ -144,6 +156,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '180 cm x 180 cm',
                 'museum' => 'Österreichische Galerie Belvedere, Viena',
                 'curiosity' => 'Klimt utilizó pan de oro real en la pintura, lo que da a la obra su icónica luminosidad dorada. El uso de este material evoca la estética bizantina.',
+                'photo' => 'paintings/The_Kiss.jpg',
             ],
             [
                 'piece_of_art' => 'El Nacimiento de Venus',
@@ -154,6 +167,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '172.5 cm x 278.9 cm',
                 'museum' => 'Galería Uffizi, Florencia',
                 'curiosity' => 'Botticelli pintó "El nacimiento de Venus" no sobre tabla, como era típico en la época, sino sobre lienzo, algo inusual para el Renacimiento italiano.',
+                'photo' => 'paintings/La_nascita_di_Venere.jpg',
             ],
             [
                 'piece_of_art' => 'La Libertad Guiando al Pueblo',
@@ -164,6 +178,7 @@ class PaintingsTableSeeder extends Seeder
                 'size' => '260 cm x 325 cm',
                 'museum' => 'Museo del Louvre, París',
                 'curiosity' => 'La mujer que simboliza la libertad, "Marianne", se ha convertido en un símbolo de la República Francesa y la lucha por la libertad en todo el mundo.',
+                'photo' => 'paintings/La_Liberte_guidant_le_peuple.jpg',
             ],
         ]);
     }

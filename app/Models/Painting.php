@@ -18,5 +18,6 @@ class Painting extends Model
         'size',
         'museum',
         'curiosity',
+        'photo',
     ];
 }

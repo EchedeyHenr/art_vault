@@ -11,6 +11,9 @@
     <table class="table table-bordered">
         <thead>
             <tr>
+                <th colspan="9" style="text-align: center;">Image</th>
+            </tr>
+            <tr>
                 <th>Piece of Art</th>
                 <th>Painter</th>
                 <th>Creation Date</th>
@@ -23,6 +26,15 @@
         </thead>
         <tbody>
             @foreach ($paintings as $p)
+                <tr>
+                    <td colspan="9" style="text-align: center;">
+                        @if ($p->photo)
+                            <img src="{{ asset('storage/' . $p->photo) }}" alt="Image of {{ $p->piece_of_art }}" style="max-width: 200px;">
+                        @else
+                            <p>No image available</p>
+                        @endif
+                    </td>
+                </tr>
                 <tr>
                     <td>{{ $p->piece_of_art }}</td> 
                     <td>{{ $p->painter }}</td> 

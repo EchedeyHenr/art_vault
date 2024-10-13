@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Create a New Painting</h1>
-    <form method="POST" action="{{ route('paintings.store') }}">
+    <form method="POST" action="{{ route('paintings.store') }}" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="piece_of_art">Piece of Art</label>
@@ -35,6 +35,10 @@
         <div class="form-group">
             <label for="curiosity">Curiosity</label>
             <textarea name="curiosity" class="form-control" id="curiosity" placeholder="Enter a curiosity about the painting" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="photo">Photo</label>
+            <input type="file" name="photo" class="form-control" id="photo">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
