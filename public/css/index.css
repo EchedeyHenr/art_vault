@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* Bloque principal */
+
+.paintings__inspirational-text {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin: 20px 0;
+    line-height: 1.5;
+    text-wrap: balance;
+}
+
+.paintings__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* .paintings__container {  Modificado 
+    width: 100vw;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.paintings__side-images {
+    flex: 0 0 50px;
+    position: relative;
+}
+
+.paintings__side-image {
+    height: 100%;
+    width: auto;
+}
+
+.paintings__main-content {
+    flex: 1;
+    padding: 0 20px;;
+} */
+
+.paintings__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.paintings__actions {
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.paintings__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.paintings__table-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.paintings__table-row {
+    border-bottom: none;
+}
+
+.paintings__table-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.paintings__table-cell {
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.paintings__table-cell--actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.paintings__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* Botones */
+.button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    white-space: nowrap;
+}
+
+.button--success {
+    background-color: #7dbe7f;
+    margin-bottom: 30px;
+}
+
+.button--primary {
+    background-color: #6aadf5;
+}
+
+.button--info {
+    background-color: #54d8ec;
+}
+
+.button--danger {
+    background-color: #fd6272;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
