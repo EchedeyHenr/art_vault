@@ -6,10 +6,10 @@
 
 @section('content')
   <div class="paintings__container">
-    {{-- <div class="paintings__side-images">
-      <img src="{{ asset('images/column.png') }}" class="paintings__side-images paintings__side-image--left" alt="Imagen Lateral Izquierda">
-    </div> --}}
-  {{-- <div class="paintings__main-content"> --}}
+  <div class="paintings__side-images">
+    {{-- <img src="{{ asset('images/column.png') }}" class="paintings__side-image" alt="Imagen Lateral Izquierda"> --}}
+  </div>
+  <div class="paintings__main-content">
     <h2 class="paintings__title">Listado de pinturas</h2>
     <p class="paintings__inspirational-text">
       El arte es la expresión más pura de la creatividad humana. Es el lenguaje sin palabras que nos conecta, nos mueve y nos transforma. A través de cada pincelada, cada nota, cada verso, el arte nos invita a ver el mundo desde una nueva perspectiva. Nos recuerda que la belleza puede encontrarse en lo cotidiano y que nuestras emociones más profundas pueden cobrar vida en formas inesperadas.
@@ -58,9 +58,9 @@
             @endforeach
         </tbody>
     </table>
-  {{-- </div> --}}
-  {{-- <div class="paintings__side-images">
-    <img src="{{ asset('images/column.png') }}" class="paintings__side-images paintings__side-image--right" alt="Imagen Lateral Derecha">
-  </div> --}}
+  </div>
+  <div class="paintings__side-images">
+    {{-- <img src="{{ asset('images/column.png') }}" class="paintings__side-image" alt="Imagen Lateral Derecha"> --}}
+  </div>
   </div>
 @endsection
