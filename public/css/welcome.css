@@ -31,6 +31,7 @@ body {
 	background-image: url('../images/Creation_of_Adam.jpg');
 	background-size: cover;
 	background-position-y: 810px;
+	background-position-x: 60px;
 	
 	background-clip: text;
 	-webkit-background-clip: text;

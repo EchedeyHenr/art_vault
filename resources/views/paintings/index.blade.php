@@ -57,7 +57,7 @@
                     @endforeach
                 </tbody>
             </table>
-            <p class="paintings__text">
+            <p class="paintings__text paintings__text--botom">
                 El botón de eliminar es intencionalmente más pequeño que los otros, recordándonos que el arte es un tesoro
                 que nunca debería ser borrado, solo apreciado y celebrado.
             </p>

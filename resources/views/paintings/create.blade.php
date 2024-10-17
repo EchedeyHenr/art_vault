@@ -78,6 +78,15 @@
                     <label for="photo" class="paintings__file-label">Subir Foto</label>
                     <span class="paintings__file-name" id="file-name">Ningún archivo seleccionado</span>
                 </div>
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 <div class="paintings__form-group paintings__form-group--button">
                     <button type="submit" class="paintings__button paintings__button--form">Añadir</button>
                 </div>

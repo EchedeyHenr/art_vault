@@ -20,7 +20,12 @@
                 <h1>Art-Vault</h1>
             </div>
             <div class="navbar__links">
-                @if (Route::is('paintings.create') || Route::is('paintings.edit') || Route::is('paintings.show'))
+                @if (Route::is('paintings.show'))
+                    <a class="navbar__button navbar__button--edit"
+                        href="{{ route('paintings.edit', $painting->id) }}">Editar</a>
+                    <a class="navbar__button navbar__button--list" href="{{ route('paintings.index') }}">Volver a Lista
+                        de Cuadros</a>
+                @elseif (Route::is('paintings.create') || Route::is('paintings.edit'))
                     <a class="navbar__button navbar__button--list" href="{{ route('paintings.index') }}">Volver a Lista
                         de Cuadros</a>
                 @else
@@ -34,6 +39,15 @@
     <div class="container">
         @yield('content')
     </div>
+    <footer class="footer">
+        <div class="footer__content">
+        <p class="footer__text">&copy; {{ date('Y') }} Art-Vault. Todos los derechos reservados.</p>
+        <nav class="footer__nav">
+            <a class="footer__link" href="{{ route('about') }}">Acerca de</a>
+            <a class="footer__link" href="{{ route('contact') }}">Contacto</a>
+        </nav>
+        </div>
+    </footer>
 </body>
 
 </html>

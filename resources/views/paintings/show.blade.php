@@ -9,56 +9,58 @@
         <div class="paintings__side-images"></div>
         <div class="paintings__main-content paintings__main-content--show">
             <h2 class="paintings__title">Detalle de pintura</h2>
-            <div class="card-body">
-                <div class="paintings__form-group">
-                    <strong>Obra de Arte:</strong><br />
-                    @if ($painting->photo)
-                        <img src="{{ asset('storage/' . $painting->photo) }}" alt="Image of {{ $painting->piece_of_art }}"
-                            style="max-width: 200px;">
-                    @else
-                        <p>Imagen no disponible</p>
-                    @endif
-                </div>
+            <div class="paintings__card-body"> {{-- MIRAR ESTA CLASS --}}
+                <ul class="paintings__details-list">
+                    <li class="paintings__detail">
+                        <strong>Obra de Arte:</strong>
+                        @if ($painting->photo)
+                            <img src="{{ asset('storage/' . $painting->photo) }}"
+                                alt="Image of {{ $painting->piece_of_art }}" class="paintings__image">
+                        @else
+                            <p class="paintings__no-image">Imagen no disponible</p>
+                        @endif
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Título de la Pieza de Arte:</strong><br />
-                    {{ $painting->piece_of_art }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Título de la Pieza de Arte:</strong>
+                        {{ $painting->piece_of_art }}
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Pintor:</strong><br />
-                    {{ $painting->painter }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Pintor:</strong>
+                        {{ $painting->painter }}
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Año de Creación:</strong><br />
-                    {{ $painting->creation_date }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Año de Creación:</strong>
+                        {{ $painting->creation_date }}
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Movimiento Artístico:</strong><br />
-                    {{ $painting->art_movement }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Movimiento Artístico:</strong>
+                        {{ $painting->art_movement }}
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Técnica Artística utilizada:</strong><br />
-                    {{ $painting->artistic_technique }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Técnica Artística utilizada:</strong>
+                        {{ $painting->artistic_technique }}
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Tamaño:</strong><br />
-                    {{ $painting->size }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Tamaño:</strong>
+                        {{ $painting->size }}
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Museo:</strong><br />
-                    {{ $painting->museum }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Museo:</strong>
+                        {{ $painting->museum }}
+                    </li>
 
-                <div class="paintings__form-group">
-                    <strong>Dato Curioso:</strong><br />
-                    {{ $painting->curiosity }}
-                </div>
+                    <li class="paintings__detail">
+                        <strong>Dato Curioso:</strong>
+                        {{ $painting->curiosity }}
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="paintings__side-images"></div>

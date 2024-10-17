@@ -8,3 +8,6 @@ Route::get('/', function () {
 });
 
 Route::resource('paintings', PaintingController::class);
+
+Route::view('/about', 'under_construction')->name('about');
+Route::view('/contact', 'under_construction')->name('contact');

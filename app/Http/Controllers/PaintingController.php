@@ -6,6 +6,7 @@ use App\Models\Painting;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 
 class PaintingController extends Controller
 {
@@ -78,6 +79,18 @@ class PaintingController extends Controller
             'photo' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048'
         ]));
         
+        if ($request->hasFile('photo')) {
+            if($painting->photo) {
+                Storage::disk('public')->delete($painting->photo);
+            }
+
+            $file = $request->file('photo');
+            $path = $file->store('pieces_of_art_photos', 'public');
+            $validatedData['photo'] = $path;
+        }
+
+        $painting->update($validatedData);
+
         return redirect()->route('paintings.index')
                         ->with('success','Painting updated successfully');
     }
