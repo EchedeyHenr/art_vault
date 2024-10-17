@@ -1,0 +1,55 @@
+
+.paintings__main-content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.paintings__main-content--create{
+    display: flex;
+    align-items: center;
+}
+
+.paintings__button-container {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.paintings__button {
+    background-color: #B8860B;
+    color: #e5e5e5;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.paintings__button:hover {
+    background-color: #D4AF37;
+    color: #333;
+}
+
+.paintings__detail {
+    margin-bottom: 15px;
+}
+
+.paintings__label {
+    font-weight: bold;
+    color: #555;
+}
+
+.paintings__text {
+    margin-top: 5px;
+    color: #666;
+}
+
+.paintings__image {
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.paintings__no-image {
+    color: #999;
+    font-style: italic;
+}
