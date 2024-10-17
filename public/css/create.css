@@ -1,0 +1,116 @@
+
+.paintings__main-content--create {
+    width: 100%;
+}
+
+.paintings__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.paintings__form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.paintings__form-group--button {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.paintings__button--form {
+    width: 20%;
+    max-width: 600px;
+}
+
+.paintings__label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.paintings__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.paintings__input::placeholder {
+    color: #888;
+    opacity: 0.8;
+}
+
+.paintings__input:focus {
+    border-color: #C6A72D;
+    outline: none;
+}
+
+.paintings__input--curiosity {
+    font-family: inherit;
+}
+
+
+.paintings__button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #C6A72D;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.paintings__button:hover {
+    background-color: #D4AF37;
+}
+
+.paintings__link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.paintings__link:hover {
+    text-decoration: underline;
+}
+
+.paintings__file-input {
+    display: none;
+}
+
+.paintings__file-label {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #f5f5dc, #e0e0e0);
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paintings__file-label:hover {
+    background-color: #D4AF37;
+}
+
+.paintings__file-input::placeholder {
+    color: #888;
+}
+
+.paintings__file-name {
+    display: block;
+    margin-top: 10px;
+    color: #888;
+}

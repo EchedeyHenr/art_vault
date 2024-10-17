@@ -15,7 +15,7 @@
             <div class="form-group">
                 <strong>Obra de Arte:</strong> <br/>
                     @if ($painting->photo)
-                        <img src="{{ asset('storage/' . $painting->photo) }}" alt="Image of {{ $painting->piece_of_art }}" style="max-width: 200px;">
+                        <img src="{{ asset('storage/' . $painting->photo) }}" alt="Image of {{ $painting->piece_of_art }}" alt="Image of {{ $painting->piece_of_art }}" style="max-width: 200px;">
                     @else
                         <p>Imagen no disponible</p>
                     @endif
