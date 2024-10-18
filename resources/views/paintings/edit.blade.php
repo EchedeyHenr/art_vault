@@ -75,6 +75,7 @@
                         </ul>
                     </div>
                 @endif
+                <p class="paintings__text">Si necesitas reducir la imagen: <a class="button button--help" href="https://compressjpeg.com/es/">Reducir peso de la imagen</a></p>
                 <div class="paintings__form-group paintings__form-group--button">
                     <button type="submit" class="paintings__button paintings__button--form">Editar Obra</button>
                 </div>
