@@ -67,7 +67,7 @@ class PaintingController extends Controller
 
     public function update(Request $request, Painting $painting): RedirectResponse
     {
-        $painting->update($request->validate([
+        $validatedData = ($request->validate([
             'piece_of_art' => 'required|string|max:255',
             'painter' => 'required|string|max:255',
             'creation_date' => 'required|string|max:255',
