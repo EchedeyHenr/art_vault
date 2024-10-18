@@ -1,66 +1,117 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ART-VAULT
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Art-Vault** is a platform dedicated to preserving and protecting the artistic heritage of humanity, both physical and digital. Inspired by the Svalbard Global Seed Vault, which safeguards essential seeds for the future of biodiversity, Art-Vault stands as a digital refuge where the most valuable artworks are preserved for future generations. Its goal is to safeguard the creative legacy, working with museums, artists, and collectors to ensure that these pieces are not lost to time, disasters, or technological threats.
 
-## About Laravel
+More than just an archive, **Art-Vault** is a sanctuary for art, designed to ensure that the beauty, creativity, and cultural history of humanity remain accessible worldwide. Its mission is to protect these artistic expressions not only as testimonies of the past but as living sources of inspiration for the future, ensuring that art continues to thrive and impact future generations.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Getting Started 🚀
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+See Installation for instructions on how to deploy the project.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Pre-requisitos 📋
 
-## Learning Laravel
+* **[IDE]** - Integrated Development Environment. In our case, we used Visual Studio Code (https://code.visualstudio.com). It can be downloaded from the official website.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* **[Node]** -  A runtime environment that allows developers to run JavaScript on the server side. We can download it from the official website (https://nodejs.org/en/), it's recommended to use the LTS version.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* **[MySQL Server 8.0]** - Database. Download it from the official website (https://dev.mysql.com/downloads/installer/). IMPORTANT: During installation, you will be asked to create an administrator password, which is important to remember for later use.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* **[Laragon]** - A portable, fast, and powerful local development environment for PHP, Node.js, Python, and more. It provides an easy setup for local servers and databases, including Apache, MySQL, and Nginx. You can download it from the official website (https://laragon.org).
 
-## Laravel Sponsors
+* **[PHP]** - A popular server-side scripting language designed for web development. It is widely used to create dynamic and interactive websites. You can download it from the official website (https://www.php.net). To work with Laravel 11, PHP 8.2 or higher is required.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Installation 🔧
 
-### Premium Partners
+* We will start by cloning the repository to our local machine.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+```
+git clone https://github.com/EchedeyHenr/art_vault.git
+```
 
-## Contributing
+* Start Laragon, open the Database included in Laragon, and also open the Terminal. Once in the Terminal, we are located in the folder "/c/laragon/www", where projects are created by default. Access your project folder.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```
+cd art-vault
+```
 
-## Code of Conduct
+* Inside your project folder, proceed to install the dependencies.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```
+npm install
+composer install
+```
 
-## Security Vulnerabilities
+* To start the application, a connection to the Database is necessary.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+In the second step, we have already opened the Database; we just need to access it.
+In case of an error:
+    - Check that the ".env" file is present in your project.
+If errors persist:
+    - Stop Laragon.
+    - Ensure that the "MySQL" service is stopped.
+    - Restart Laragon.
+    - You should now be able to access the Database without issues.
 
-## License
+* To run the migration for the table in our Database, we will use the following command:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+php artisan migrate
+```
+This command will create the necessary tables for our application to function.
+
+* (OPTIONAL) If we want to have test data in our table, we will execute the following command:
+
+```
+php artisan db:seed --class=PaintingsTableSeeder
+```
+This command will insert some records into our Database.
+
+* Now we can start the application:
+
+```
+php artisan serve
+```
+
+## Running Tests ⚙️
+
+You can access the application and use it normally.
+
+* Accessing the application:
+    - Go to localhost:8000/
+    - The Welcome screen will load.
+    - After 3 seconds, the access button will appear in the upper left corner.
+
+* Creating a new record:
+    - Click the button in the navigation navbar located at the top right.
+    - Fill out the form and add the new record.
+    - If there are no errors, you will be redirected to the list of Paintings.
+
+* Deleting a record:
+    - From the list of Paintings, click the "Borrar" button.
+    - The record will be removed from the list of Paintings.
+
+**In the artistic universe, each data point has its place and meaning. Do not delete them; remember, art is an act of creation, and each element in our list is part of the story we are telling.**
+
+* Editing an existing record:
+    - From the list of Paintings, click the "Editar" button.
+    - Modify the fields as desired and click "Editar Obra".
+    - If there are no errors, you will be redirected to the list of Paintings.
+
+## Built With 🛠️
+
+* [Laravel] - A PHP framework for building modern web applications with an elegant syntax and powerful tools for routing, authentication, and more.
+* [Blade-templates] - A simple yet powerful templating engine provided by Laravel for building dynamic web pages with clean and reusable code.
+* [Eloquent-ORM] - Laravel's Object-Relational Mapping (ORM) system, which provides an elegant and fluent way to interact with databases using PHP models.
+* [MySQL] - A tool for managing relational databases.
+
+## Autores ✒️
+
+* **Echedey Henríquez Hernández** - *Initial Work* - [EchedeyHenr](https://github.com/EchedeyHenr)
+* **Andrés Villanueva** - *ReadMe* - [Villanuevand](https://github.com/Villanuevand)
+
+## Licencia 📄
+
+This project is licensed under the (Your License) - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+⌨️ with ❤️ by [EchedeyHenr](https://github.com/EchedeyHenr) 😊

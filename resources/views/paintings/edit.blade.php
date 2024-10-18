@@ -76,7 +76,7 @@
                     </div>
                 @endif
                 <div class="paintings__form-group paintings__form-group--button">
-                    <button type="submit" class="paintings__button paintings__button--form">Update</button>
+                    <button type="submit" class="paintings__button paintings__button--form">Editar Obra</button>
                 </div>
             </form>
         </div>
