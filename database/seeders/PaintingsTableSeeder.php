@@ -180,6 +180,17 @@ class PaintingsTableSeeder extends Seeder
                 'curiosity' => 'La mujer que simboliza la libertad, "Marianne", se ha convertido en un símbolo de la República Francesa y la lucha por la libertad en todo el mundo.',
                 'photo' => 'paintings/La_Liberte_guidant_le_peuple.jpg',
             ],
+            [
+                'piece_of_art' => 'El agujero',
+                'painter' => 'Victor Felipe',
+                'creation_date' => '2024',
+                'art_movement' => 'Neoliberalismo',
+                'artistic_technique' => 'Taladración',
+                'size' => ' 1 cm',
+                'museum' => 'MOMA',
+                'curiosity' => 'En tiempo de guerra cualquier agujero es trinchera.',
+                'photo' => 'paintings/the_hole.png',
+            ],
         ]);
     }
 }
