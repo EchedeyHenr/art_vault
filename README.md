@@ -1,14 +1,18 @@
 # ART-VAULT
 
+<img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/><img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/><img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/>
+
 **Art-Vault** is a platform dedicated to preserving and protecting the artistic heritage of humanity, both physical and digital. Inspired by the Svalbard Global Seed Vault, which safeguards essential seeds for the future of biodiversity, Art-Vault stands as a digital refuge where the most valuable artworks are preserved for future generations. Its goal is to safeguard the creative legacy, working with museums, artists, and collectors to ensure that these pieces are not lost to time, disasters, or technological threats.
 
 More than just an archive, **Art-Vault** is a sanctuary for art, designed to ensure that the beauty, creativity, and cultural history of humanity remain accessible worldwide. Its mission is to protect these artistic expressions not only as testimonies of the past but as living sources of inspiration for the future, ensuring that art continues to thrive and impact future generations.
 
-## Getting Started 🚀
+<img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/><img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/><img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/>
+
+## Getting Started 🏛️
 
 See Installation for instructions on how to deploy the project.
 
-### Pre-requisitos 📋
+### Pre-requisitos 🪨
 
 * **[IDE]** - Integrated Development Environment. In our case, we used Visual Studio Code (https://code.visualstudio.com). It can be downloaded from the official website.
 
@@ -20,7 +24,7 @@ See Installation for instructions on how to deploy the project.
 
 * **[PHP]** - A popular server-side scripting language designed for web development. It is widely used to create dynamic and interactive websites. You can download it from the official website (https://www.php.net). To work with Laravel 11, PHP 8.2 or higher is required.
 
-### Installation 🔧
+### Installation 🎨
 
 * We will start by cloning the repository to our local machine.
 
@@ -44,13 +48,15 @@ composer install
 * To start the application, a connection to the Database is necessary.
 
 In the second step, we have already opened the Database; we just need to access it.
-In case of an error:
-    - Check that the ".env" file is present in your project.
-If errors persist:
-    - Stop Laragon.
-    - Ensure that the "MySQL" service is stopped.
-    - Restart Laragon.
-    - You should now be able to access the Database without issues.
+
+**In case of an error:**
+1. Check that the ".env" file is present in your project.
+
+**If errors persist:**
+1. Stop Laragon.
+2. Ensure that the "MySQL" service is stopped.
+3. Restart Laragon.
+4. You should now be able to access the Database without issues.
 
 * To run the migration for the table in our Database, we will use the following command:
 
@@ -72,7 +78,7 @@ This command will insert some records into our Database.
 php artisan serve
 ```
 
-## Running Tests ⚙️
+## Running Tests 🖼️
 
 You can access the application and use it normally.
 
@@ -97,14 +103,14 @@ You can access the application and use it normally.
     - Modify the fields as desired and click "Editar Obra".
     - If there are no errors, you will be redirected to the list of Paintings.
 
-## Built With 🛠️
+## Built With 🖥️
 
 * [Laravel] - A PHP framework for building modern web applications with an elegant syntax and powerful tools for routing, authentication, and more.
 * [Blade-templates] - A simple yet powerful templating engine provided by Laravel for building dynamic web pages with clean and reusable code.
 * [Eloquent-ORM] - Laravel's Object-Relational Mapping (ORM) system, which provides an elegant and fluent way to interact with databases using PHP models.
 * [MySQL] - A tool for managing relational databases.
 
-## Autores ✒️
+## Autores 🎭
 
 * **Echedey Henríquez Hernández** - *Initial Work* - [EchedeyHenr](https://github.com/EchedeyHenr)
 * **Andrés Villanueva** - *ReadMe* - [Villanuevand](https://github.com/Villanuevand)
@@ -115,3 +121,5 @@ This project is licensed under the (Your License) - see the [LICENSE.md](LICENSE
 
 ---
 ⌨️ with ❤️ by [EchedeyHenr](https://github.com/EchedeyHenr) 😊
+
+<img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/><img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/><img src="public/images/Greek-filigree-pattern.png" alt="Greek filigree pattern" width="33%" height="50px"/>
