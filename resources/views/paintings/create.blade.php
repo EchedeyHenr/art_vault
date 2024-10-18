@@ -97,4 +97,5 @@
 
     </div>
     <script src="{{ asset('js/create.js') }}"></script>
+    <script src="{{ asset('js/column.js') }}"></script>
 @endsection

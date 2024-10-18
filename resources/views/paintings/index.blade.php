@@ -65,4 +65,5 @@
         <div class="paintings__side-images">
         </div>
     </div>
+    <script src="{{ asset('js/column.js') }}"></script>
 @endsection

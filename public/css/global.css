@@ -92,6 +92,15 @@ h2 {
     padding: 0 20px;;
 }
 
+.paintings__main-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.paintings__main-content.loaded {
+    opacity: 1;
+}
+
 .paintings__title {
     font-size: 32px;
     text-align: center;
@@ -110,6 +119,8 @@ h2 {
 .paintings__text--last {
     margin-bottom: 26px;
 }
+
+/* Estilos del Footer */
 
 .footer {
     background-color: #d9d9d9;
